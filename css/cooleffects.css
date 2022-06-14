@@ -1,0 +1,69 @@
+/* cool btn animation with arrows */
+.hvr {
+    background-repeat: no-repeat;
+}
+
+
+.hvr span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.hvr span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+.hvr:hover span {
+    padding-right: 25px;
+}
+
+.hvr:hover span:after {
+    opacity: 1;
+    right: 0;
+
+}
+/* end cool btn animation with arrows */
+
+
+.hvr-fill {
+    box-shadow: inset 0 0 0 0 #156efd;
+    color: #54b3d6;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+    .hvr-fill:hover {
+        color: #fff;
+        box-shadow: inset 200px 0 0 0 #156efd;
+    }
+  
+  /* Presentational styles */
+.nice-text {
+    color: #156efd;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .nice-text {
+        color: #156efd;
+        font-family: 'Poppins', sans-serif;
+        font-size: medium;
+        font-weight: 400;
+        line-height: 1.5;
+        text-decoration: none;
+    }
+}
+
+
+/* #54b3d6 */
