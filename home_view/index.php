@@ -1,6 +1,6 @@
 <?php
-    require "header.php";
-    require 'includes/dbh.inc.php';
+    require "../header.php";
+    require '../includes/dbh.inc.php';
 ?>
 
     <main style="margin-bottom: 90px;">
@@ -55,7 +55,7 @@
                         if ($resultCheck > 0) {
                             while ($row = mysqli_fetch_assoc($result)) {
                                 echo '
-                                    <a href="answers.php?msgid='.$row["id"].'" class="course-links">
+                                    <a href="../answers.php?msgid='.$row["id"].'" class="course-links">
                                     <div class="course-container">
                                     <h6>'.$row["message"].'</h6>
                                     </div>
@@ -74,5 +74,5 @@
         
     </main>
 <?php 
-    require 'footer.php';
+    require '../footer.php';
 ?>

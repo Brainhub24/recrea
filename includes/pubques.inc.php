@@ -13,27 +13,27 @@ if (isset($_SESSION['userId'])) {
             $sql = "INSERT INTO ask_messages (id_messenger, message, id_subject) SELECT ?, ?, subjects.id FROM subjects WHERE subjects.name = ? LIMIT 1;";
                 $stmt = mysqli_stmt_init($conn);
                 if (!mysqli_stmt_prepare($stmt, $sql)) {
-                    header("Location: ../ask.php?puberror=sqlerror");
+                    header("Location: ../ask_view/ask.php?puberror=sqlerror");
                     exit();
                 }
                 else {
                     mysqli_stmt_bind_param($stmt, "iss", $id_messenger, $message, $subject_name);
                     mysqli_stmt_execute($stmt);
-                    header("Location: ../ask.php?publish=success");
+                    header("Location: ../ask_view/ask.php?publish=success");
                     exit();
                 }
         }
         else {
-            header("Location: ../ask.php?puberror=emptyfields");
+            header("Location: ../ask_view/ask.php?puberror=emptyfields");
             exit();
         }
     }
     else {
-        header("Location: ../ask.php");
+        header("Location: ../ask_view/ask.php");
         exit();
     }
 }
 else {
-    header("Location: ../ask.php?puberror=notloggedin");
+    header("Location: ../ask_view/ask.php?puberror=notloggedin");
     exit();
 }

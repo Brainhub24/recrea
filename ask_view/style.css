@@ -1,0 +1,69 @@
+/* ask.php */
+.subject-li {
+    list-style-type: none;
+}
+
+.subject-input {
+    background: #fff;
+    width: 15%;
+    min-width: 230px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+    margin-top: 20px;
+}
+
+.subject-input input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }
+  .subject-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  .subject-input .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  .subject-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  .subject-input.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: #efefef;
+  }
+  .subject-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    color: #156efd;
+    cursor: pointer;
+  }
+
+
+/* end ask.php */

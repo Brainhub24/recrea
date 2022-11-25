@@ -9,9 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/cooleffects.css">
+    <?php
+        if (str_contains($_SERVER["PHP_SELF"], "ask_view/ask.php")) {
+            echo '<link rel="stylesheet" href="ask_view/style.css">';
+        } elseif (str_contains($_SERVER["PHP_SELF"], "home_view/index.php")) {
+            echo '<link rel="stylesheet" href="home_view/style.css">';
+        }
+    ?>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!-- for search logo in ask.php subject field -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!-- for search logo in ask_view/ask.php subject field -->
     <title>SCOOL</title>
 </head>
 <body>
@@ -19,11 +26,12 @@
     <div class="container">
         <header class="index-header">
         <ul class="div-0-m" style="list-style-type: none;">
-            <li><a href="index.php" class="hvr-fill nice-text">Home</a></li>
+            <li><a href="home_view/index.php" class="hvr-fill nice-text">Home</a></li>
             <li><a href="myaccount.php" class="hvr-fill nice-text">My&nbsp;Account</a></li>
-            <li><a href="ask.php" class="hvr-fill nice-text">Ask&nbsp;a&nbsp;Question</a></li>
+            <li><a href="ask_view/ask.php" class="hvr-fill nice-text">Ask&nbsp;a&nbsp;Question</a></li>
         </ul>
         <?php
+        
             if (isset($_SESSION['userId'])) {
                 echo '<div class="">
                     <form action="includes/logout.inc.php" method="post">
@@ -118,7 +126,7 @@
                             </div>';
                 }
             }
-            ?>
+        ?>
         </header>
     </div>
     

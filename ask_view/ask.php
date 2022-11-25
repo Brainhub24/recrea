@@ -1,6 +1,6 @@
 <?php
-    require 'header.php';
-    require 'includes/dbh.inc.php';
+    require '../header.php';
+    require '../includes/dbh.inc.php';
 ?>
 <?php
 if (!isset($_SESSION['userId'])) {
@@ -17,7 +17,7 @@ else {
         <h3 class="text-center">Ask your question</h3>
     </p>
     <div class="msgsys-container" style="border: none;">
-    <form action="includes/pubques.inc.php" id="comment" class="text-center" method="POST">
+    <form action="../includes/pubques.inc.php" id="comment" class="text-center" method="POST">
         <div class="write-msg-cont">
             <textarea form="comment" name="msg" id="msg-input-text" cols="70" rows="4" maxlength="1000" class="textareacom" placeholder="write your question here..." required></textarea>
         </div>
@@ -47,7 +47,7 @@ else {
 </main>
 
 <!-- script for handling search bar -->
-<script src="javascript/ask.php.js" defer></script> 
+<script src="ask.php.js" defer></script> 
 <?php
-    require 'footer.php';
+    require '../footer.php';
 ?>
