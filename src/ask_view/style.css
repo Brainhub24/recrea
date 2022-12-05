@@ -1,6 +1,7 @@
 /* ask.php */
 .subject-li {
     list-style-type: none;
+    display: none;
 }
 
 .subject-input {

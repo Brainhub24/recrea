@@ -7,13 +7,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <?php
+    <?php
         if (str_contains($_SERVER["PHP_SELF"], "ask_view/ask.php")) {
-            echo '<link rel="stylesheet" href="ask_view/style.css">';
             $src = "../";
+            echo '<link rel="stylesheet" href="'.$src.'ask_view/style.css">';
         } elseif (str_contains($_SERVER["PHP_SELF"], "home_view/index.php")) {
-            echo '<link rel="stylesheet" href="home_view/style.css">';
             $src = "../";
+            echo '<link rel="stylesheet" href="'.$src.'home_view/style.css">';
+            
         } elseif (str_contains($_SERVER["PHP_SELF"], "answers.php")) {
             $src = "./";
         } elseif (str_contains($_SERVER["PHP_SELF"], "error.php")) {
@@ -25,7 +26,7 @@
         } else {
             $src = "./"; //unsecure to use an else like this
         }
-    ?> -->
+    ?>
     <!-- CSS only -->
     <link rel="stylesheet" href="<?=$src?>css/main.css">
     <link rel="stylesheet" href="<?=$src?>css/cooleffects.css">
@@ -34,7 +35,7 @@
     <title>SCOOL</title>
 </head>
 <body>
-
+    
     <div class="container">
         <header class="index-header">
         <ul class="div-0-m" style="list-style-type: none;">

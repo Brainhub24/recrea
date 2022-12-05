@@ -34,7 +34,7 @@ inputBox.onkeyup = (e) => {
     }
 }
 
-// writing the categorie in the search fiel when user clicks the element
+// writing the categorie in the search field when user clicks the element
 function select(element) {
     let selectUserData = element.textContent;
     if (selectUserData != "Category not found") {
