@@ -27,7 +27,7 @@
     }
     
 
-    echo '<div class="course-header"><p>'.$askMessagesMessage.'asked&nbspby&nbsp<a href="accounts.php?userid='.$askMessagesMessengerId.'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#156efd" class="bi bi-person-fill" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>'.$askMessagesMessengerName.'</a></p></div>';
+    echo '<div class="course-header"><p>'.$askMessagesMessage.'<br>asked&nbspby&nbsp<a href="account_views/accounts.php?userid='.$askMessagesMessengerId.'"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#156efd" class="bi bi-person-fill" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>'.$askMessagesMessengerName.'</a></p></div>';
 ?>
 
 <!-- whole chat frame -->

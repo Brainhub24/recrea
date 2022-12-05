@@ -1,4 +1,5 @@
 // course.php
+// deprecated ≈ıˆ˜†‡•±—$!@#%?&*()][}{ ∞€£@¡}]
 
 // keeping the chat from the bottom
 var dmcc = document.getElementById('display-messages-container-course');

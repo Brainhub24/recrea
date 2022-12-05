@@ -1,4 +1,4 @@
-// ask.php
+// script for ask.php
 
 // script for subject searchbar
 

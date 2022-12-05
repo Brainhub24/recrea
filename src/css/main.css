@@ -126,14 +126,8 @@ textarea {
 /* end header.php */
 
 
-/* myaccount.php */
 
-/* end myaccount.php */
-
-
-
-
-/* course.php */
+/* used to display messages */
 
 .course-header {
     margin: auto;
@@ -238,7 +232,7 @@ textarea {
     }
 }
 
-/* end coure.php */
+/* end used to display messages */
 
 
 
